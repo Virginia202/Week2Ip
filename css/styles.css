@@ -1,0 +1,22 @@
+/* Styling the div image */
+.image{
+    font-style: italic;
+}
+/* styling the form */
+form{
+    width: 500px;
+}
+input{
+    width: 100%;
+}
+
+
+.card-title h2{
+    text-align: center;
+    color: white;
+    background-color: blue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 7px;
+}

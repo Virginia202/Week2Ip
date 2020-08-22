@@ -5,55 +5,52 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Know your name</title>
      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="css/styles.css">
  </head>
  <body>
-    <div class="container-fluid">
-      <div class="jumbotron">
-             <h2>know your Ghanian name</h2>
-      </div>
-         <div class="card">
-            <div class="card-title">
-                 <h2>Fill this form</h2>
-            </div>
-              <div class="card-body">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="username's year of birth" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="user's birthmonth eg.7 for july" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="user's date of birth" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                  </div>
-                </div>
-                <div class="input-group">
-                  <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                    <option selected>Choose Gender</option>
-                    <option value="1">Female</option>
-                    <option value="2">Male</option>
-                  </select>
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Submit</button>
-                  </div>
-                </div>                              
-                  
-              </div>
-          </div>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>Know Your Akan name</h1>
     </div>
-     
+    <div class="card">
+      <div class="card-title">
+        <h2>Want to know your Akan name fill this form</h2>
+        <div class="card-body">
+        <form action="" method="GET">
+            <div>
+              <label for ="date">Date</label>
+              <input type="number" name = "date" min="1" max="31">
+            </div>
+              <div>
+                <label for ="month">month</label>
+                <input type="number" name = "month" min="1" max="12">
+              </div>
+                    <div>
+                      <label for ="century">century</label>
+                      <input type="number" name = "century" placeholder="Eg 19 in 1994" min="10" max="20">
+                    </div>
+                    <div>
+                      <label for ="year">Year</label>
+                      <input type="number" name = "year" min="01" max="99" placeholder="Eg 94 in 1994">
+                    </div>
+                    <div>
+                      Gender
+                      <div>
+                        <label for="male">Male</label>
+                        <input type="radio" name = "gender" id="male" value="male">
+                      </div>
+                      <div>
+                        <label for="female">Female</label>
+                        <input type="radio" name = "gender" id="female" value="female">
+                      </div>
+                    </div>
+                   <input type="submit" name="submit">
+        </form>
+						
+        </div>
+      </div>
+    </div>
+  </div>
+    
  </body>
  </html>
