@@ -29,9 +29,10 @@ p{
     background-color: cornflowerblue;
 }
 .jumbotron{
-    background-color: darkblue;
+    background-color: blue;
     color: darkgray;
     font-style: italic;
+    font-size: larger;
 }
 
 .card-title h2{
@@ -44,5 +45,6 @@ p{
     padding: 7px;
 }
 .card-body{
-    background-color: darkkhaki;
+    background-color: lightblue;
+    
 }

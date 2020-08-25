@@ -5,15 +5,12 @@
 body{
     background-color: cornflowerblue;
     box-sizing: border-box;
+    background-image: url(/Images/annie-spratt-0cgpyigyIkM-unsplash.jpg);
+    background-repeat: no-repeat;
 }
-h1{
-    border: 5px solid black;
-    width: 30%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-top: 10px;
+.jumbotron{
+    background-color: lightblue;
+    color: lightslategray;
 }
 .container{
     width: 100%;
@@ -32,10 +29,18 @@ h1{
     justify-content: space-between;
     max-width: 400px;
     margin-left: 10px;
+    font-size: large;
+    color: white;
 }
+.first h2,.how h2{
+    color: blue;
+}
+
 .how{
     max-width: 400px;
     margin-left: 50%;
     margin-right: 5%;
+    font-size: large;
+    color: white;
 
 }
