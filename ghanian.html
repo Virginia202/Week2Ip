@@ -16,35 +16,23 @@
       <div class="card-title">
         <h2>Want to know your Akan name fill this form</h2>
         <div class="card-body">
-        <form action="" method="GET">
-            <div>
-              <label for ="date">Date</label>
-              <input type="number" name = "date" min="1" max="31">
-            </div>
-              <div>
-                <label for ="month">month</label>
-                <input type="number" name = "month" min="1" max="12">
-              </div>
-                    <div>
-                      <label for ="century">century</label>
-                      <input type="number" name = "century" placeholder="Eg 19 in 1994" min="10" max="20">
-                    </div>
-                    <div>
-                      <label for ="year">Year</label>
-                      <input type="number" name = "year" min="01" max="99" placeholder="Eg 94 in 1994">
-                    </div>
-                    <div>
-                      Gender
-                      <div>
-                        <label for="male">Male</label>
-                        <input type="radio" name = "gender" id="male" value="male">
-                      </div>
-                      <div>
-                        <label for="female">Female</label>
-                        <input type="radio" name = "gender" id="female" value="female">
-                      </div>
-                    </div>
-                   <input type="submit" name="submit">
+        <form name="myform" action="" method="GET">Enter Your Name : <br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="ddate">Date of Birth</label>
+          <input type="date" id="ddate" name="ddate">
+          <input type="radio" id="genderMale" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="genderFemale" name="gender" value="Female">
+          <label for="female">Female</label>
+          <input type="button" name="button" value="Click" onclick="testResults()">
+          <p id="name"></p>
+          <p id="name"></p>
+          <p id="genderLabel"></p>
+          <p id="Newname"></p>
+          
+          
+            
+                      
         </form>
 						
         </div>
