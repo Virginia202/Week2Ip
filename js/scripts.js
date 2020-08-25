@@ -1,3 +1,4 @@
+//Trial 
 function testResults(){
     var TestVar = document.getElementById("fname").Value;
         var
@@ -21,5 +22,10 @@ function testResults(){
         var malesArray=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
         var femaleArray= ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
         var myName="";
-        if(myGender)
+        if(myGender=="male"){
+            myName = malesArray[dayOfWeek];
+        }else{
+            myName = femaleArray[dayOfWeek];
+        }
+        document.getElementById("Newname").innerHTML=myName
 }

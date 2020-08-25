@@ -4,6 +4,39 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Know your name</title>
+     <SCRIPT LANGUAGE="JavaScript">
+      function testResults () {
+          var TestVar = document.getElementById("fname").value;
+          var Dy=document.getElementById("ddate").value;
+          var gender=document.getElementsByName("gender");
+        document.getElementById("name").innerHTML = TestVar;
+        document.getElementById("date").innerHTML =Dy;
+        
+        var myGender = "male";
+        for (var i = 0, length = gender.length; i < length; i++) {
+          if (gender[i].checked) {
+           
+            myGender = gender[i].value;
+            document.getElementById("genderLabel").innerHTML = myGender;
+            
+            break;
+          }
+        }
+        var mydate = new Date(Dy);
+        var dayOfWeek = mydate.getDay();
+        var malesArray = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+        var femalesArray = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+        var myName = "";
+        if(myGender=="male"){
+          myName = malesArray[dayOfWeek];
+        }else{
+          myName = femalesArray[dayOfWeek];
+        }
+        document.getElementById("Newname").innerHTML = myName;
+        
+            
+      }
+      </SCRIPT>
      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="css/styles.css">
  </head>
@@ -14,31 +47,28 @@
     </div>
     <div class="card">
       <div class="card-title">
-        <h2>Want to know your Akan name fill this form</h2>
+        <h2>Want to know your Akan name ?fill this form</h2>
         <div class="card-body">
         <form name="myform" action="" method="GET">Enter Your Name : <br>
-          <input type="text" id="fname" name="fname"><br>
-          <label for="ddate">Date of Birth</label>
-          <input type="date" id="ddate" name="ddate">
-          <input type="radio" id="genderMale" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="genderFemale" name="gender" value="Female">
-          <label for="female">Female</label>
-          <input type="button" name="button" value="Click" onclick="testResults()">
-          <p id="name"></p>
-          <p id="name"></p>
-          <p id="genderLabel"></p>
-          <p id="Newname"></p>
-          
-          
-            
-                      
-        </form>
+
+            <input type="text" id="fname" name="fname"><br>
+              <label for="ddate">Date of Birth</label><br>
+              <input type="date" id="ddate" name="ddate"><br>
+              <input type="radio" id="genderMale" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="genderFemale" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <INPUT TYPE="button" name="button" Value="Submit" onClick="testResults()">
+            <p id="name"></p>
+            <p id="date"></p>
+            <p id="genderLabel"></p>
+            <p id="Newname">Your Akan Name is</p>
+           </form>
 						
         </div>
       </div>
     </div>
   </div>
-    
+  <!-- <script src="js/scripts.js"></script> -->
  </body>
  </html>

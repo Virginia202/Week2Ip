@@ -1,3 +1,6 @@
+
+
+
 /* Styling the div image */
 .image{
     font-style: italic;
@@ -5,11 +8,31 @@
 /* styling the form */
 form{
     width: 500px;
+    color: blue;
+    font-size: large;
 }
 input{
     width: 100%;
+    font-size: large;
 }
-
+p{
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+    margin-left: 5px;
+    text-align: center;
+}
+#Newname{
+    color: crimson;
+    font-style: italic;
+    border: 5px solid cadetblue;
+    background-color: cornflowerblue;
+}
+.jumbotron{
+    background-color: darkblue;
+    color: darkgray;
+    font-style: italic;
+}
 
 .card-title h2{
     text-align: center;
@@ -19,4 +42,7 @@ input{
     font-weight: bold;
     font-size: xx-large;
     padding: 7px;
+}
+.card-body{
+    background-color: darkkhaki;
 }
