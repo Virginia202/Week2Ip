@@ -18,7 +18,7 @@ function testResults(){
         }
 
         var mydate = newDate(Dy);
-        var datOfWeek=mydate.getDay();
+        var dayOfWeek=mydate.getDay();
         var malesArray=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
         var femaleArray= ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
         var myName="";
